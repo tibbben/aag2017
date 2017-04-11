@@ -628,15 +628,16 @@
 					</svg>
 				</div>
 				
-				<!-- ****************************************************************************  -->
-				<!--                               Slides Begin Here                                                      -->
-				<!-- ****************************************************************************  -->
+				<!-- **************************************************************************** 
+				                                    Slides Begin Here                               
+				     ****************************************************************************  -->
             
 				<section  data-transition="slide none">
 					<div style="width: 1356px; height: 740px; position: absolute; top: 45px; left: 5px; overflow: hidden; background-color: #fff;">
 						<svg version="1.1" id="statictimelineSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 1800px; height: 754px; position: relative; left: -350px; top: 0px" viewBox="0 0 1600 670" xml:space="preserve">
 							<use xlink:href="#statictimelineSVG"></use>
 						</svg>
+						<!-- <img src="common/assets/Peru_timeline.svg" style="width: 1800px !important; height: 754px !important; position: relative; left: -350px; top: 0px"> -->
 					</div>
 					<div class="fragment fade-out" style="width: 1366px; height: 768px; position: absolute; top: 0px; left: 0px; ">
 						<div style="width: 1366px; height: 768px; position: absolute; top: 0px; left: 0px; background-color: #fff; opacity: 0.8;"></div>
@@ -1533,6 +1534,9 @@
                     { src: 'common/java/csv2chart.js' }
                 ] 
             });
+            /* moveToElements()
+			/* simply calculates a center of the text and line elements and then moves the
+			/* positon of the SVG to center on that point (specific to the timeline SVG)
 			function moveToElements(groupElements) {
 				var minx=1300, maxx=0, miny=768, maxy=0; 
 				for (var i = 0; i < groupElements.length; i++ ) {
